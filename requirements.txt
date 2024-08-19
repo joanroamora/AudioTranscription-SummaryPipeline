@@ -1,0 +1,7 @@
+Flask
+pytube
+pydub
+transformers
+torch
+moviepy
+vosk

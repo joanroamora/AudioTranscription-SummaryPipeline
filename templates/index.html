@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Processing Pipeline</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <h1>Video Processing Pipeline</h1>
+            </header>
+            <div class="upload-section">
+                <form action="{{ url_for('process_video') }}" method="POST" enctype="multipart/form-data">
+                    <div class="file-upload">
+                        <label for="video_file" class="custom-file-upload">
+                            Select Video
+                        </label>
+                        <input type="file" id="video_file" name="video_file" accept="video/mp4">
+                    </div>
+                    <div class="button-section">
+                        <button type="submit" class="process-btn">1. Preprocessing</button>
+                    </div>
+                </form>
+            </div>
+            <div class="output-grid">
+                <h2>Output</h2>
+                <div class="output-box">
+                    <p>{{ output }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

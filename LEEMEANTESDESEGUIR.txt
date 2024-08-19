@@ -1,0 +1,4 @@
+Problemas con la libreria de youtube para descargar los videos
+Problemas con los codecs para generar un wav en mono que es lo unico que soporta la belleza de vosk
+Tenemos en models unos codecs que pesan 1gb...
+Terrible.
